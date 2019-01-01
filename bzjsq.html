@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+        <link rel="SHORTCUT ICON" href="/home.ico" />
+        <title>计算器</title>
+        <link href="//fangd.sinaapp.com/assets/yaml/yaml.css" rel="stylesheet" type="text/css" />
+        <link href="//cdn.bootcss.com/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="//fangd.sinaapp.com/assets/custom/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="./css/calc.css" rel="stylesheet" type="text/css" />
+        <!--[if lte IE 7]>
+        <link href="//fangd.sinaapp.com/assets/yaml/core/iehacks.min.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title></title>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+ 		 var hm = document.createElement("script");
+ 		 hm.src = "https://hm.baidu.com/hm.js?8e54d377148f421c8bafcaea0e83bb20";
+ 		 var s = document.getElementsByTagName("script")[0]; 
+  		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>
+<body> 
+	<header>
+        <div class="ym-wrapper">
+            <div class="ym-grid">
+                <div class="nav-left ym-gl">
+                    <h1> 装备白字计算器</h1>
+                </div>
+            </div>
+        </div>
+	</header>
+<div class="body">
+	<div class="ym-wrapper">
+		<div class="ym-grid">
+    		<div class="left-col ym-gl">
+       		  <div id="main" class="form-inline">
+            		<div>
+                		<table class="form-table">
+                    		<tr>
+            					<th>基础数值：</th>
+            					<td>
+									<div class="text">
+										<input name="basicNum" type="text" id="basicNum" />
+									</div>
+								</td>
+        					</tr>
+							<tr>
+            					<th>强化段位：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="strongRank">
+										<option>0</option>
+	                    				<option>1</option>
+	                    				<option>2</option>
+	                    				<option>3</option>
+	                    				<option>4</option>
+	                    				<option>5</option>
+	                    				<option>6</option>
+	                    				<option>7</option>
+	                    				<option>8</option>
+	                    				<option>9</option>
+	                    				<option>10</option>
+	                    				<option>11</option>
+	                    				<option>12</option>
+										<option>13</option>
+	                    				<option>14</option>
+	                    				<option>15</option>
+	                    				<option>16</option>
+										<option>17</option>
+	                    				<option>18</option>
+										<option>19</option>
+	                    				<option>20</option>
+	                    				</select>
+										<span class="add-on">段</span>
+									</div>
+								</td>							
+								<th>&nbsp;&nbsp;&nbsp;&nbsp;段位等级：</th>
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="rankLevel">
+	                   					<option>0</option>
+	                    				<option>1</option>
+	                    				<option>2</option>
+	                    				<option>3</option>
+	                    				<option>4</option>
+										</select>
+	                   					<span class="add-on">级</span>
+	                   				</div>
+	                   			</td>
+							</tr>
+	                    	<tr>
+                                <th>淬炼：</th>
+	                    		<td>
+	                    			<div class="input-append">
+	                    				<input type="text" min="0" max="286" value="0" id="percent" />
+	                    				<span class="add-on">%</span>
+	                    			</div>
+	                    		</td>
+                                <th>&nbsp;&nbsp;&nbsp;&nbsp;精炼等级：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<select id="selector">
+	                    				<option value="0.00" id="nothing">无</option>
+	                    				<option value="0.03" id="nothing">人</option>
+	                    				<option value="0.06" id="nothing">鬼</option>
+	                    				<option value="0.09" id="nothing">地</option>
+	                    				<option value="0.12" id="nothing">仙</option>
+	                    				<option value="0.15" id="nothing">圣</option>
+	                    				<option value="0.18" id="nothing">帝</option>
+	                    				<option value="0.20" id="nothing">天</option>
+	                    				<option value="0.22" id="nothing">魔</option>
+	                    				<option value="0.24" id="nothing">神</option>
+	                    				</select>
+	                    			</div>
+	                    		</td>
+							</tr>
+	                    	<tr>
+	                    		<th>最终白字：</th>
+							</tr>
+							<tr>
+								<th>有青龙：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result" id="result" disabled="true"/>
+	                    			</div>
+	                    		</td>
+								<th>&nbsp;&nbsp;&nbsp;&nbsp;无青龙：</th>
+								<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result1" id="result1" disabled="true"/>
+	                    			</div>
+	                    		</td>
+	                    	</tr>
+                          	<tr>
+								<th>有无青龙差：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result2" id="result2" disabled="true"/>
+	                    			</div>
+	                    		</td>
+	                    	</tr>
+	                    	<tr>
+        						<th></th>
+        						<td>
+									<div class="text">
+										<button class="btn btn-danger" id="count" onclick="count()">计算</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<div id="shuju" style="font-size: 20px"> <br>常用基础数值 <br>
+							<br>涅槃:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80:
+							<br>武器伤害&nbsp;&nbsp;1560&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武器伤害&nbsp;&nbsp;1440
+							<br>戒指伤害&nbsp;&nbsp;520&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;戒指伤害&nbsp;&nbsp;480
+							<br>胸甲生命&nbsp;&nbsp;3120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;胸甲生命&nbsp;&nbsp;2880
+							<br>其他看打造界面
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="ckepop">
+
+</body>
+	<script>
+		var count = function() {
+			var first = $("#basicNum").val()
+			var second = 1 + $("#strongRank").val() * 0.1 + $("#rankLevel").val() * 0.02 + $("#percent").val() * 0.01
+			var third = 1 + parseFloat($("#selector").val())
+			var forth = 1.1
+			var result = parseFloat(first * second * third *forth).toFixed(0)
+			var result1 = parseFloat(first * second * third).toFixed(0)
+            var result2 = parseFloat(result - result1).toFixed(0)
+			 //alert(first+"---"+second+"---"+third+"---"+forth)
+			$("#result").val(result)
+          	$("#result1").val(result1)
+          	$("#result2").val(result2)
+		}
+	</script>	
+</html>
+<style>
+	.text{
+    margin-top: 0px;
+	}
+</style>

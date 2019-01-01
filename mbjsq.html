@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+        <link rel="SHORTCUT ICON" href="/home.ico" />
+        <title>计算器</title>
+        <link href="//fangd.sinaapp.com/assets/yaml/yaml.css" rel="stylesheet" type="text/css" />
+        <link href="//cdn.bootcss.com/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="//fangd.sinaapp.com/assets/custom/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="./css/calc.css" rel="stylesheet" type="text/css" />
+        <!--[if lte IE 7]>
+        <link href="//fangd.sinaapp.com/assets/yaml/core/iehacks.min.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title></title>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+ 		 var hm = document.createElement("script");
+ 		 hm.src = "https://hm.baidu.com/hm.js?8e54d377148f421c8bafcaea0e83bb20";
+ 		 var s = document.getElementsByTagName("script")[0]; 
+  		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>  
+	<body>
+		<header>
+        <div class="ym-wrapper">
+            <div class="ym-grid">
+                <div class="nav-left ym-gl">
+                    <a href="/"><h1>各类计算器</h1></a>
+                </div>
+            </div>
+        </div>
+		</header>
+		<div class="body">
+    <div class="ym-wrapper">
+		<div class="ym-grid">
+			<div class="left-col ym-gl">
+				<div id="main" class="form-inline">
+					<table class="form-table">
+						<th style="width:176px;"><b>面板计算器：</b>：</th>
+					</div>
+        <tr>
+            <th>主属性：</th>
+            <td>
+				<div class="text">
+					<input type="radio" name="zhu" id="zhu" value="0.7"/>力量
+					<input type="radio" name="zhu" id="zhu" value="1.6"/>智力
+					<input type="radio" name="zhu" id="zhu" value="1"/>敏捷
+					<input type="radio" name="zhu" id="zhu" value="0.5"/>精神
+				</div>
+			</td>
+        </tr>
+		<tr>
+            <th>次收益属性：</th>
+            <td>
+				<div class="text">
+					<input type="radio" checked name="ci" id="ci" value="0"/>无
+					<input type="radio" name="ci" id="ci" value="0.7"/>力量
+					<input type="radio" name="ci" id="ci" value="0.6"/>智力
+				</div>
+			</td>
+        </tr>
+		<tr>
+            <th>流派套装加成：</th>
+            <td>
+				<div class="input-append">
+					<input type="number" min="0" max="24" value="0"name="taozhuang" id="taozhuang" />
+					<span class="add-on">%</span>				
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th>流派被动加成:</th>
+			<td>
+				<div class="input-append">
+					<input type="number" min="-25" max="30" value="0" id="beidong" />
+					<span class="add-on">%</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th>流派主属加成:</th>
+			<td>
+				<div class="input-append">
+					<input type="number" min="0" max="20" value="0" id="zhushu" />
+					<span class="add-on">%</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th>流派额外基础：</th>
+			<td>
+				<div class="text">
+					<input type="radio" checked name="ewai" id="ewai" value="0"/>无
+					<input type="radio" name="ewai" id="ewai" value="0.5"/>每主属性额外0.5物理/法术伤害
+				</div>
+			</td>
+		</tr>
+		<tr>
+            <th>在水/九天：</th>
+            <td>
+				<div class="text">
+					<input type="radio" checked name="buff" id="buff" value="0"/>无
+					<input type="radio" name="buff" id="buff" value="15"/>80在水/九天
+					<input type="radio" name="buff" id="buff" value="18"/>涅槃在水/九天
+				</div>
+			</td>
+		</tr>
+		<tr>
+            <th>每主属性：</th>
+			<td>
+				<div class="input-append">
+					<input type="text" name="result" id="result" disabled="true"/>
+				</div>
+			</td>
+		</tr>
+		<tr>
+            <th>每伤害词缀：</th>
+			<td>
+				<div class="input-append">
+					<input type="text" name="result1" id="result1" disabled="true"/>
+				</div>
+			</td>
+		</tr>
+		<tr>
+            <th>每次属性：</th>
+			<td>
+				<div class="input-append">
+					<input type="text" name="result2" id="result2" disabled="true"/>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="text">
+					<button class="btn btn-danger" id="count" onclick="count()">计算</button>
+				</div>
+			</td>		
+		</tr>
+	</body>
+	<script>
+		var count = function() {
+			var first = parseFloat($("input[name='zhu']:checked").val()) + parseFloat($("input[name='ewai']:checked").val())
+			var second = 1 + $("#taozhuang").val() * 0.01 + $("#beidong").val() * 0.01 + parseFloat($("input[name='buff']:checked").val()) * 0.01
+			var third = 1 + $("#zhushu").val() * 0.01
+			var fourth = parseFloat($("input[name='ci']:checked").val())
+			var result = parseFloat(first * second * third).toFixed(6)
+			var result1 = parseFloat(second).toFixed(6)
+			var result2 = parseFloat(fourth * second).toFixed(6)
+			//alert(first+"---"+second+"---"+third)
+			$("#result").val(result)
+			$("#result1").val(result1)
+			$("#result2").val(result2)
+		}
+	</script>
+</html>
+<style>
+	.text{
+		margin-top: 8px;
+	}
+</style>

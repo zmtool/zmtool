@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+        <link rel="SHORTCUT ICON" href="/home.ico" />
+        <title>计算器</title>
+        <link href="//fangd.sinaapp.com/assets/yaml/yaml.css" rel="stylesheet" type="text/css" />
+        <link href="//cdn.bootcss.com/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="//fangd.sinaapp.com/assets/custom/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="./css/calc.css" rel="stylesheet" type="text/css" />
+        <!--[if lte IE 7]>
+        <link href="//fangd.sinaapp.com/assets/yaml/core/iehacks.min.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title></title>
+	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title></title>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+ 		 var hm = document.createElement("script");
+ 		 hm.src = "https://hm.baidu.com/hm.js?8e54d377148f421c8bafcaea0e83bb20";
+ 		 var s = document.getElementsByTagName("script")[0]; 
+  		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>    
+<body>
+    <header>
+        <div class="ym-wrapper">
+            <div class="ym-grid">
+                <div class="nav-left ym-gl">
+                    <h1>摘星契约消耗计算器</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="ym-wrapper">
+			<div class="ym-grid">
+    			<div class="left-col ym-gl">
+       				 <div id="main" class="form-inline">
+            			<div>
+               				<table class="form-table">
+                    			<tr>
+                        		<th>当前阶数：</th>
+                       				<td>
+                            			<div class="input-append">
+											<select id="dqjs">
+                                			<option value="0" id="nothing">0</option>
+	                    					<option value="1" id="nothing">1</option>
+	                    					<option value="2" id="nothing">2</option>
+	                    					<option value="3" id="nothing">3</option>
+	                    					<option value="4" id="nothing">4</option>
+	                    					<option value="5" id="nothing">5</option>
+	                    					<option value="6" id="nothing">6</option>
+	                    					<option value="7" id="nothing">7</option>
+	                    					<option value="8" id="nothing">8</option>
+	                    					<option value="9" id="nothing">9</option>	
+											</select>
+											<span class="add-on">阶</span>
+										</div>
+                        				</td>
+								<th>&nbsp;&nbsp;&nbsp;&nbsp;目标阶数：</th>
+									<td>
+										<div class="input-append">
+											<select id="mbjs">
+                                			<option value="0" id="nothing">0</option>
+	                    					<option value="1" id="nothing">1</option>
+	                    					<option value="2" id="nothing">2</option>
+	                    					<option value="3" id="nothing">3</option>
+	                    					<option value="4" id="nothing">4</option>
+	                    					<option value="5" id="nothing">5</option>
+	                    					<option value="6" id="nothing">6</option>
+	                    					<option value="7" id="nothing">7</option>
+	                    					<option value="8" id="nothing">8</option>
+	                    					<option value="9" id="nothing">9</option>
+											</select>
+											<span class="add-on">阶</span>
+										</div>
+                        			</td>
+                    			</tr>
+                    			<tr>
+								<th>
+                            	当前整星：
+                            	</th>
+                            		<td>
+                            			<div class="input-append">
+											<select id="dqzx">
+	                   						<option value="0" id="nothing">0</option>
+	                    					<option value="1" id="nothing">1</option>
+	                    					<option value="2" id="nothing">2</option>
+	                    					<option value="3" id="nothing">3</option>
+	                    					<option value="4" id="nothing">4</option>
+											</select>
+	                   						<span class="add-on">颗</span>
+	                   					</div>
+                            		</td>
+								<th>
+                            	&nbsp;&nbsp;&nbsp;&nbsp;目标整星：
+                            	</th>
+                            		<td>
+                            			<div class="input-append">
+											<select id="mbzx">
+	                   						<option value="0" id="nothing">0</option>
+	                    					<option value="1" id="nothing">1</option>
+	                    					<option value="2" id="nothing">2</option>
+	                    					<option value="3" id="nothing">3</option>
+	                    					<option value="4" id="nothing">4</option>
+											<option value="5" id="nothing">5</option>
+											</select>
+	                   						<span class="add-on">颗</span>
+	                   					</div>
+                            		</td>
+                    			</tr>
+                   				<tr>
+								<th>
+                            	当前半星：
+                            	</th>
+                            		<td>
+                            			<div class="input-append">
+											<select id="dqbx">
+	                   						<option value="0" id="nothing">0</option>
+	                    					<option value="1" id="nothing">1</option>
+											</select>
+	                   						<span class="add-on">颗</span>
+	                   					</div>
+                            		</td>
+								<th>
+                            	&nbsp;&nbsp;&nbsp;&nbsp;目标半星：
+                            	</th>
+                            		<td>
+                            			<div class="input-append">
+											<select id="mbbx">
+	                   						<option value="0" id="nothing">0</option>
+	                    					<option value="1" id="nothing">1</option>
+											</select>
+	                   						<span class="add-on">颗</span>
+	                   					</div>
+                            		</td>
+                    			</tr>
+								<tr>
+            					<th>升星进度：</th>
+            						<td>
+										<div class="text">
+											<input name="jd" type="text" value="0" id="jd" />
+										</div>
+									</td>
+        						</tr>
+								<tr>
+                            	<th class="align_right">需要消耗：</th>
+                            		<td>
+                                		<div class="text">
+	                    					<input type="text" name="result" id="result" disabled="true"/>
+	                    				</div>
+                            		</td>
+                        		</tr>
+							    <tr>
+                        		<th></th>
+                        			<td>
+                            			<div class="text">
+											<button class="btn btn-danger" id="count" onclick="cost()">计算</button>
+										</div>
+                        			</td>
+                    			</tr>
+                			</table>
+						</div>
+					</table>
+                </div>
+            </div>
+		</div>
+    </div>
+</div>
+</body>
+	<script>
+//		var count = function() {
+//			var first = $("#basicNum").val()
+//			var second = 1 + $("#strongRank").val() * 0.1 + $("#rankLevel").val() * 0.02 + $("#percent").val() * 0.01
+//			var third = 1 + parseFloat($("#selector").val())
+//			var forth = 1 + parseFloat($("input[name='haveDragon']:checked").val())
+//			var result = first * second * third * forth
+//			 alert(first+"---"+second+"---"+third+"---"+forth)
+//			$("#result").val(result)
+//		}
+		var count = function(level){
+			if(level <= 3){
+				return level * 2 * 2 * 5 
+			}else{
+				return level * 2 * 3 * 5 
+			}
+		}
+		
+		var cost = function(){
+			var currentLevel = parseInt($("#dqjs").val())
+			var currentAllStar = parseInt($("#dqzx").val())
+			var currentHalfStar = parseInt($("#dqbx").val())
+			var targetLevel = parseInt($("#mbjs").val())
+			var targetAllStar = parseInt($("#mbzx").val())
+			var targetHalfStar = parseInt($("#mbbx").val())
+			var alreadyCost = 0
+			for(var i = 0;i <= currentLevel;i++){
+				alreadyCost += count(i)
+			}
+			if(currentLevel < 3){
+				alreadyCost += (currentLevel + 1) * currentAllStar * 2 * 2 + (currentLevel + 1) * currentHalfStar * 2
+			}else{
+				alreadyCost += (currentLevel + 1) * currentAllStar * 3 * 2 + (currentLevel + 1) * currentHalfStar * 3
+			}
+			var needCost = 0
+			for(var i = 0;i <= targetLevel;i++){
+				needCost += count(i)
+			}
+			if(targetLevel < 3){
+				needCost += (targetLevel + 1) * targetAllStar * 2 * 2 + (targetLevel + 1) * targetHalfStar * 2
+			}else{
+				needCost += (targetLevel + 1) * targetAllStar * 3 * 2 + (targetLevel + 1) * targetHalfStar * 3
+			}
+			var result = needCost - alreadyCost - parseInt($("#jd").val())
+			$("#result").val(result)
+		}
+	</script>	
+</html>
