@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+        <link rel="SHORTCUT ICON" href="/home.ico" />
+        <title>计算器</title>
+        <link href="//fangd.sinaapp.com/assets/yaml/yaml.css" rel="stylesheet" type="text/css" />
+        <link href="//cdn.bootcss.com/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="//fangd.sinaapp.com/assets/custom/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="//rntool.cn/css/calc.css" rel="stylesheet" type="text/css" />
+        <!--[if lte IE 7]>
+        <link href="//fangd.sinaapp.com/assets/yaml/core/iehacks.min.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title></title>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+ 		 var hm = document.createElement("script");
+ 		 hm.src = "https://hm.baidu.com/hm.js?8e54d377148f421c8bafcaea0e83bb20";
+ 		 var s = document.getElementsByTagName("script")[0]; 
+  		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>
+<body> 
+	<header>
+        <div class="ym-wrapper">
+            <div class="ym-grid">
+                <div class="nav-left ym-gl">
+                    <h1> 翅膀强化等级计算器</h1>
+                </div>
+            </div>
+        </div>
+	</header>
+<div class="body">
+	<div class="ym-wrapper">
+		<div class="ym-grid">
+    		<div class="left-col ym-gl">
+       		  <div id="main" class="form-inline">
+            		<div>
+                		<table class="form-table">
+                    		<tr>
+            					<th>部位：</th>
+								<th>当前强化：</th>
+								<th>目标强化：</th>
+        					</tr>
+							<tr>
+            					<th>武器：</th>
+								<td>
+									<div class="text">
+	                    				<select id="wqdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="wqmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+	                    	<tr>
+            					<th>胸甲：</th>
+								<td>
+									<div class="text">
+	                    				<select id="xjdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="text">
+										<select id="xjmb">
+	                   					<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+										</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>头盔：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="tkdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="tkmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>护腿：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="htdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="htmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>手套：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="stdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="stmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>戒指：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="jzdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="jzmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>耳环：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="rhdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="rhmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>项链：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="xldq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="xlmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>护心镜：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="hxjdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="hxjmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>徽章：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="hzdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>									
+										</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="hzmb">
+										<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<tr>
+            					<th>手骨：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="sgdq">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="sgmb">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+	                   				</div>
+	                   			</td>
+							</tr>
+							<!--<tr>
+            					<th>风翼：</th>
+								<td>
+									<div class="input-append">
+	                    				<select id="strongRank">
+	                    				<option value="0" id="nothing">12段0级</option>
+										<option value="1" id="nothing">12段1级</option>
+	                    				<option value="2" id="nothing">12段2级</option>
+	                    				<option value="3" id="nothing">12段3级</option>
+	                    				<option value="4" id="nothing">12段4级</option>
+										<option value="5" id="nothing">13段0级</option>
+										<option value="6" id="nothing">13段1级</option>
+	                    				<option value="7" id="nothing">13段2级</option>
+	                    				<option value="8" id="nothing">13段3级</option>
+	                    				<option value="9" id="nothing">13段4级</option>
+										<option value="10" id="nothing">14段0级</option>
+										<option value="11" id="nothing">14段1级</option>
+	                    				<option value="12" id="nothing">14段2级</option>
+	                    				<option value="13" id="nothing">14段3级</option>
+	                    				<option value="14" id="nothing">14段4级</option>
+										<option value="15" id="nothing">15段0级</option>
+										<option value="16" id="nothing">15段1级</option>
+	                    				<option value="17" id="nothing">15段2级</option>
+	                    				<option value="18" id="nothing">15段3级</option>
+	                    				<option value="19" id="nothing">15段4级</option>
+										<option value="20" id="nothing">16段0级</option>
+										<option value="21" id="nothing">16段1级</option>
+	                    				<option value="22" id="nothing">16段2级</option>
+	                    				<option value="23" id="nothing">16段3级</option>
+	                    				<option value="24" id="nothing">16段4级</option>
+										<option value="25" id="nothing">17段0级</option>
+										<option value="26" id="nothing">17段1级</option>
+	                    				<option value="27" id="nothing">17段2级</option>
+	                    				<option value="28" id="nothing">17段3级</option>
+	                    				<option value="29" id="nothing">17段4级</option>
+										<option value="30" id="nothing">18段0级</option>
+										<option value="31" id="nothing">18段1级</option>
+	                    				<option value="32" id="nothing">18段2级</option>
+	                    				<option value="33" id="nothing">18段3级</option>
+	                    				<option value="34" id="nothing">18段4级</option>
+										<option value="35" id="nothing">19段0级</option>
+										<option value="36" id="nothing">19段1级</option>
+	                    				<option value="37" id="nothing">19段2级</option>
+	                    				<option value="38" id="nothing">19段3级</option>
+	                    				<option value="39" id="nothing">19段4级</option>
+										<option value="40" id="nothing">20段0级</option>
+	                    				</select>
+										<span class="add-on">段</span>
+									</div>
+								</td>							
+	                   			<td>
+	                   				<div class="input-append">
+										<select id="rankLevel">
+	                   					<option value="0" id="nothing">12段0级</option>
+										<option value="4" id="nothing">12段1级</option>
+	                    				<option value="8" id="nothing">12段2级</option>
+	                    				<option value="12" id="nothing">12段3级</option>
+	                    				<option value="16" id="nothing">12段4级</option>
+										<option value="20" id="nothing">13段0级</option>
+										<option value="26" id="nothing">13段1级</option>
+	                    				<option value="32" id="nothing">13段2级</option>
+	                    				<option value="38" id="nothing">13段3级</option>
+	                    				<option value="44" id="nothing">13段4级</option>
+										<option value="50" id="nothing">14段0级</option>
+										<option value="58" id="nothing">14段1级</option>
+	                    				<option value="66" id="nothing">14段2级</option>
+	                    				<option value="74" id="nothing">14段3级</option>
+	                    				<option value="82" id="nothing">14段4级</option>
+										<option value="90" id="nothing">15段0级</option>
+										<option value="100" id="nothing">15段1级</option>
+	                    				<option value="110" id="nothing">15段2级</option>
+	                    				<option value="120" id="nothing">15段3级</option>
+	                    				<option value="130" id="nothing">15段4级</option>
+										<option value="140" id="nothing">16段0级</option>
+										<option value="160" id="nothing">16段1级</option>
+	                    				<option value="180" id="nothing">16段2级</option>
+	                    				<option value="200" id="nothing">16段3级</option>
+	                    				<option value="220" id="nothing">16段4级</option>
+										<option value="240" id="nothing">17段0级</option>
+										<option value="270" id="nothing">17段1级</option>
+	                    				<option value="300" id="nothing">17段2级</option>
+	                    				<option value="330" id="nothing">17段3级</option>
+	                    				<option value="360" id="nothing">17段4级</option>
+										<option value="390" id="nothing">18段0级</option>
+										<option value="430" id="nothing">18段1级</option>
+	                    				<option value="470" id="nothing">18段2级</option>
+	                    				<option value="510" id="nothing">18段3级</option>
+	                    				<option value="550" id="nothing">18段4级</option>
+										<option value="590" id="nothing">19段0级</option>
+										<option value="640" id="nothing">19段1级</option>
+	                    				<option value="690" id="nothing">19段2级</option>
+	                    				<option value="740" id="nothing">19段3级</option>
+	                    				<option value="790" id="nothing">19段4级</option>
+										<option value="840" id="nothing">20段0级</option>
+										</select>
+	                   					<span class="add-on">级</span>
+	                   				</div>
+	                   			</td>
+							</tr>-->
+							<tr>
+							<th>当前等级：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result" id="result" disabled="true"/>
+	                    			</div>
+	                    		</td>
+							</tr>
+							<tr>
+								<th>目标等级：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result1" id="result1" disabled="true"/>
+	                    			</div>
+	                    		</td>
+	                    	</tr>
+							<tr>
+								<th>还需等级：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result2" id="result2" disabled="true"/>
+	                    			</div>
+	                    		</td>
+	                    	</tr>
+							<tr>
+								<th>消耗明光：</th>
+	                    		<td>
+	                    			<div class="text">
+	                    				<input type="text" name="result3" id="result3" disabled="true"/>
+	                    			</div>
+	                    		</td>
+	                    	</tr>
+	                    	<tr>
+        						<th></th>
+        						<td>
+									<div class="text">
+										<button class="btn btn-danger" id="count" onclick="count()">计算</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="ckepop">
+
+</body>
+	<script>
+		var count = function() {
+			var first = parseFloat($("#wqdq").val()) + parseFloat($("#xjdq").val()) + parseFloat($("#tkdq").val()) + parseFloat($("#htdq").val()) + parseFloat($("#stdq").val()) + parseFloat($("#jzdq").val()) + parseFloat($("#rhdq").val()) + parseFloat($("#xldq").val()) + parseFloat($("#hxjdq").val()) + parseFloat($("#hzdq").val()) + parseFloat($("#sgdq").val())
+			var second = parseFloat($("#wqmb").val()) + parseFloat($("#xjmb").val()) + parseFloat($("#tkmb").val()) + parseFloat($("#htmb").val()) + parseFloat($("#stmb").val()) + parseFloat($("#jzmb").val()) + parseFloat($("#rhmb").val()) + parseFloat($("#xlmb").val()) + parseFloat($("#hxjmb").val()) + parseFloat($("#hzmb").val()) + parseFloat($("#sgmb").val())
+			//var third = 1 + parseFloat($("#selector").val())
+			//var forth = 1.1
+			var result = parseFloat(first + 660).toFixed(0)
+			var result1 = parseFloat(second +660).toFixed(0)
+			var result2 = parseFloat(result1 - result).toFixed(0)
+			var result3 = parseFloat(second - first).toFixed(0) * 100
+			//var result1 = parseFloat(first * second * third).toFixed(0)
+            //var result2 = parseFloat(result - result1).toFixed(0)
+			 //alert(second - first)
+			$("#result").val(result)
+          	$("#result1").val(result1)
+          	$("#result2").val(result2)
+			$("#result3").val(result3)
+		}
+	</script>	
+</html>
+<style>
+	.text{
+    margin-top: 0px;
+	}
+</style>
